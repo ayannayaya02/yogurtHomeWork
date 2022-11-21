@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt</title>
+  </head>
+  <style>
+    body{
+        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+        color: #fff;
+        width:50%;
+        margin:60px auto;
+        font-family: helvetica;
+    }
+    h1 {
+      text-align: center;
+      color: blueviolet;
+      font-weight:bold;
+      padding:20px;
+      border:1px solid #fff;
+      border-radius:4px;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 15px;
+      margin: 15px;
+      border: 5px solid blueviolet;
+      border-radius: 35px;
+      font-size: 20px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      border-radius: 12px;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 13px;
+      margin:0;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      background:blueviolet;
+      color:#ffff;
+      padding:15px;
+      border:none;
+      transition: all 200 ease-in-out;
+      border-radius:5px;
+      box-shadow:10px 5px 5px rgba(0,0,0,0.5);
+    }
+
+    button:hover {
+        opacity:0.9;
+      cursor: pointer;
+    }
+    .learn-more {
+      padding-top:12px;
+      margin: 0 auto;
+      font-size:11px;
+      text-align:center
+      color: blueviolet;
+      text-decoration: none;
+    }
+    .learn-more:hover{
+        text-decoration:underline;
+    }
+    .footer{
+        text-align:center;
+        padding: 30px;
+    }
+
+    .container{
+        max-width:700px;
+        margin:0 auto;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>I Love Yogurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <p>
+        Strained yogurt, Greek yogurt, yogurt cheese, or sack yoghurt is yogurt
+        that has been strained to remove most of its whey, resulting in a
+        thicker consistency than unstrained yogurt, while preserving yogurt's
+        distinctive sour taste.
+      </p>
+      <img
+        src="https://th.bing.com/th/id/OIP.90evOOOJH1bS_COu5E65LQHaD4?pid=ImgDet&rs=1"
+        alt="Greek Yogurt"
+      />
+      <a href="https://en.wikipedia.org/wiki/Strained_yogurt" class="learn-more"
+        >Learn More!</a
+      >
+      <button class="buy-button">👉Buy Greek Yogurt</button>
+      <p class="footer">
+        <strong>This page was built by </strong>
+        <a href="https://www.shecodes.io/" class="built-by">Ayanna Fofana</a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favorite emoji?");
+        alert(
+          "Thank you" +
+            " " +
+            name +
+            "! We'll be in touch through email, in the mean time have some yogurt!"
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
